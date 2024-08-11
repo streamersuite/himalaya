@@ -21,7 +21,7 @@ export function format(nodes, options) {
       type === 'element'
         ? {
             type,
-            tagName: node.tagName.toLowerCase(),
+            tagName: node.tagName,
             attributes: formatAttributes(node.attributes),
             children: format(node.children, options),
           }
